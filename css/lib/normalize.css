@@ -43,7 +43,7 @@
 *, h1,h2,h3,h4,h5,h6, p, blockque, figcaption, div, form, fieldset{
 	margin: 0; padding: 0; border: 0; color:#333; vertical-align: top;
 	font-size:100%; line-height:1.2em;
-	font-family:"myriad pro", arial, nanumGothic, dotum, sans-serif;}
+	font-family:"myriad pro", 'Noto Sans KR', arial, nanumGothic, dotum, sans-serif;}
 ul,ol,li{list-style: none;}
 a{text-decoration: none; color:#777;}
 a:hover, a:active{text-decoration: underline;}

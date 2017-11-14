@@ -1,0 +1,204 @@
+/* about style.css */
+
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css); 
+
+*{
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+#wrap{width: 100%;}
+
+#content {}
+
+#content div{width: 100%;}
+
+/* ****************** #title 제목 ****************** */
+
+.title{width: 100%; height: 105px;}
+.title h3{display: block; width:100%; height: 32px; font-family: Nanum Gothic; font-size: 30pt; line-height: 32px; font-weight:100; text-align: center; color: #333;}
+.title span{display: block; width: 60px; height: 4px; margin: 34px auto 26px; background-color: #ffc63e;}
+.title p{width: 100%; height: 9px; font-family: Nanum Gothic; font-size: 9pt; text-align: center; line-height: 9px; color: #666;}
+
+/* ****************** about ****************** */
+
+#about {height: 1282px; padding-top: 209px; box-sizing: border-box; background-color:#f6f6f6;}
+
+.profile{width: 100%; height: 360px; margin-top: 60px;}
+.profile img{display: block; max-width: 360px; margin: 0 auto;}
+
+.about{width: 100%;}
+.about ul{margin-top: 65px;text-align: center;}
+.about ul li{margin-top: 50px;}
+.about ul li strong{display: block; height: 15px; font-size: 14.5pt; font-family: Nanum Gothic; font-weight: 600; line-height: 15px; color: #333;}
+.about ul li span{display: block; width: 30px; height: 2px; margin: 10px auto 0; background-color: #ffc63e;}
+.about ul li p{height: 12px; margin-top: 20px; font-family: Nanum Gothic; font-size:11pt; line-height: 12px; color: #555;}
+
+
+/* ****************** career ****************** */
+
+#career {height: 1020px; padding-top: 130px; box-sizing: border-box;}
+
+#career .career_box{margin-top: 117px;}
+
+.career_box p{font-size: 11pt; font-family: Nanum Gothic; color: #666;}
+.career_box p:nth-child(2){margin-top: 10px;}
+
+#career .career_box01{width: calc(50% - 13.5px); height: 466px; padding-right: 38px; float:left; box-sizing: border-box;}
+    #career .text_box01 {margin-top: 184px;}
+    #career .text_box01 p {text-align: right;}
+    #career .text_box02 {margin-top: 134px; }
+    #career .text_box02 p {text-align: right;}
+
+#career .career_box02{width: 27px; height: 466px; float:left;}
+
+#career .career_box03{width: calc(50% - 13.5px); height: 466px; padding-left: 38px; float:left; box-sizing: border-box;}
+    #career .text_box03 {margin-top: 99px;}
+    #career .text_box03 p {text-align: left;}
+    #career .text_box04 {margin-top: 134px; }
+    #career .text_box04 p {text-align: left;}
+
+
+/* ****************** award ****************** */
+
+#award {height: 1070px; padding-top: 130px; box-sizing: border-box; background-color:#f6f6f6;}
+
+.award_box{max-width: 960px; margin: 95px auto 0; padding: 0 10px; box-sizing: border-box;}
+.award_box li{width: 33.333%; height: 180px; padding: 5px; float: left; box-sizing: border-box;}
+.award_box li div{width:100%; height: 100%; border: 1px solid  #333; box-sizing: border-box;}
+    .award_box li div img{display: block; margin: 34px auto 0;}
+    .award_box li:nth-of-type(9) div img{margin-top: 24px;}
+
+    .award_box li div p{height: 15px; text-align: center; font-size:11pt; font-family: Nanum Gothic; line-height: 11px; color: #333;}
+    .award_box li div p:nth-of-type(1){margin-top: 17px;}
+    .award_box li div p:nth-of-type(2){margin-top: 15px;}
+    .award_box li div p:nth-of-type(3){margin-top: 4px;}
+
+
+/* ****************** skill ****************** */
+
+#skill {height: 774px; padding: 130px 15px 0 15px; box-sizing: border-box; box-sizing: border-box;}
+
+#skill ul{max-width: 960px; margin: 100px auto 0;}
+#skill ul li{width: 20%; height: 237px; padding: 0 10px; float: left; box-sizing: border-box;}
+#skill ul li img{display: block; max-width: 100%; margin: 15px auto 0;}
+#skill ul li p{height: 14px; margin-top: 28px; font-family: Nanum Gothic; font-size:10.5pt;  text-align: center; line-height: 14px;}
+
+/* 
+====================================================================
+    footer
+====================================================================
+*/
+
+footer{width: 100%; height: 115px; border-top: 1px solid  #ddd; box-shadow:border-box;}
+#inner_footer {max-width:1100px; height: 55px; margin: 30px auto;}
+#inner_footer p{height: 15px; font-size: 9pt; text-align: center; letter-spacing:1px;}
+
+#inner_footer .top{width: 90px; height: 20px; margin: 20px auto 0; background-color: #333; border-radius:30px;}
+#inner_footer a{display: block; width: 90px; height:20px; border-radius: 20px; color: #fff; font-size:9pt; text-align: center; line-height:20px; font-weight: 700;}
+#inner_footer a i{color: #fff; line-height:20px;}
+
+
+/* 
+====================================================================
+   767px - 480px
+====================================================================
+*/
+
+@media screen and (max-width: 767px){
+    
+    
+/* ****************** award ****************** */
+    
+#award{height: 1430px;}
+
+.award_box{padding: 0 10px;}
+.award_box li{width: 50%; padding: 5px;}
+
+/* ****************** skill ****************** */
+
+#skill {height: 980px;}
+
+#skill ul{height: 474px; padding:0 15px;}    
+#skill ul li{width: 33.333%; height: 237px; padding: 0 10px; float: left; box-sizing: border-box;}
+#skill ul li img{display: block; max-width: 100%; margin: 15px auto 0;}
+#skill ul li p{height: 14px; margin-top: 28px; font-family: Nanum Gothic; font-size:10.5pt;  text-align: center; line-height: 14px;}
+    
+    
+}
+
+/* 
+====================================================================
+   479px - 320px
+====================================================================
+*/
+
+@media screen and (max-width: 479px){
+  
+
+/* ****************** #title 제목 ****************** */
+
+.title{height: 97px;}
+.title h3{height: 23px; font-size: 22.5pt; line-height: 23px;}
+.title span{width: 45px; height: 2px; margin: 35px auto 28px;}
+.title p{ height: 9px;font-size: 8pt;}
+
+    
+/* ****************** about ****************** */
+
+#about {height: 1018px; padding-top: 150px;}
+
+.profile{height: 250px; margin-top: 70px;}
+.profile img{max-width: 250px;}
+
+.about ul{margin-top: 70px;}
+.about ul li{margin-top: 45px;}
+.about ul li strong{height: 12px; font-size: 12pt; line-height: 12px;}
+.about ul li p{height: 12px; margin-top: 12px; font-size:10pt; line-height: 12px;}
+
+
+/* ****************** career ****************** */
+
+#career {height: 894px; padding-top: 90px;}
+
+#career .career_box{margin-top: 90px;}
+
+.career_box p{font-size: 9pt;}
+
+#career .career_box01{padding-right: 5px;}
+
+#career .career_box03{padding-left: 5px;}
+
+
+/* ****************** award ****************** */
+
+#award {height: 1110px; padding-top: 90px;}
+
+.award_box{margin: 70px auto 0;}
+.award_box li{height: 142px; padding: 5px;}
+    .award_box li div img{margin: 26px auto 0;}
+    .award_box li:nth-of-type(9) div img{margin-top: 15px;}
+
+    .award_box li div p{height: 9px; font-size:9pt; line-height: 9px;}
+    .award_box li div p:nth-of-type(1){margin-top: 14px;}
+    .award_box li div p:nth-of-type(2){margin-top: 12px;}
+    .award_box li div p:nth-of-type(3){margin-top: 4px;}
+
+/* ****************** skill ****************** */
+
+#skill {height: 940px; padding: 90px 15px 0 15px;}
+
+#skill ul{padding:0; margin: 70px auto 0;}    
+#skill ul li{width: 50%; height: 180px;}
+#skill ul li p{height: 11px; margin-top: 28px; font-size:9pt; line-height: 11px;}
+
+}
+
+
+
+
+
+
+
+
+
+
