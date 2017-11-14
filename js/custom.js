@@ -1,6 +1,20 @@
 $(function () {
+   
+    // ******* MAIN ******* 
     
-   // 맨위로 가기 
+    // 메뉴 클릭
+    
+    $('#nav_btn').click(function(){
+        $(this).toggleClass('on');
+        $(this).siblings().toggleClass('on');
+        $(this).parent().next().toggleClass('on');
+        $(this).children().toggleClass('on');
+    });
+   
+
+    // ******* PORTFOLIO ABOUT *******
+    
+    // 맨위로 가기 
    $(window).scroll(function () {
         if ($(this).scrollTop() >= 50) {
             $('#top').fadeIn("fast");
@@ -24,6 +38,7 @@ $(function () {
             $('header h1').addClass('plus_h'),
             $('header nav').addClass('plus_h'),
             $('header #trigger').addClass('plus_t'),
+            $('header #nav_btn').addClass('plus_t'),
             $('header span').eq(1).addClass('hidden_m');
             
         }else{
@@ -31,6 +46,7 @@ $(function () {
             $('header h1').removeClass('plus_h'),
             $('header nav').removeClass('plus_h'),
             $('header #trigger').removeClass('plus_t'),
+            $('header #nav_btn').removeClass('plus_t'),
             $('header span').eq(1).removeClass('hidden_m');
         }
         
@@ -51,5 +67,4 @@ $(function () {
         menu.removeAttr('style');
         }
     });
-    
 });
