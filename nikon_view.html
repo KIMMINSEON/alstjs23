@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0," />
+    <link rel="shortcut icon" type="image/x-icon" href="img/logo.png" />
+    <link rel="apple-touch-icon" href="img/logo_fa.png" />
+    <!-- reset.css 불러오기 -->
+    <link rel="stylesheet" href="css/lib/normalize.css" />
+    <!-- design -->
+    <link rel="stylesheet" href="./font-awesome-4.6.1/css/font-awesome.min.css" />
+
+    <!--[if lte IE 9]>
+    <script> alert("현재브라우저에서는 일부 원활하게 작동되지 않을 수 있습니다.\n
+                  크롬브라우저를 사용해주세요")</script>
+	<script src="./js/dist/html5shiv.min.js"></script>
+	<script src="./js/dist/ie9.min.js"></script>
+	<script src="./js/dist/PIE.js"></script>
+	<script src="./js/dist/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="js/jquery/jquery-1.12.2.min.js"></script>
+    <script src="js/jquery/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/jquery/jquery-ui.min.js"></script>
+    <script src="js/prefixfree.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    
+    <link href="css/view/nikon.css" rel="stylesheet">
+    <title>Nikon View</title>
+    <style>
+       
+    </style>
+    <script>
+        $(document).ready(function(){
+            // 맨위로 가기 
+            $('.top').click(function () { 
+                $('html,body').animate({
+                    scrollTop: 0
+                }, 2000);
+            });
+            
+            $( window ).resize(function() {
+            var width=$('#section');
+            if (width.width() < 960){
+                jQuery('#img').attr('src','img/view/nikon_view768.jpg')
+            }
+		}).resize();
+
+        });
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        
+        <!--<div id="section1">
+            <img id="img" src="img/view/nikon_view.jpg" srcset="img/view/nikon_view.jpg 960w, img/view/nikon_view768.jpg 768w, img/view/nikon_view480.jpg 480w" alt="닉콘 리뉴얼 홈페이지 설명">
+            <img src="img/view/nikon_view768.jpg" alt="닉콘 리뉴얼 홈페이지 설명">
+            <img src="img/view/nikon_view480.jpg" alt="닉콘 리뉴얼 홈페이지 설명">
+        </div>-->
+         <div id="section1">
+            <img src="img/view/nikon_view.jpg"  alt="닉콘 리뉴얼 홈페이지 설명">
+            <img src="img/view/nikon_view768.jpg" alt="닉콘 리뉴얼 홈페이지 설명">
+            <img src="img/view/nikon_view480.jpg" alt="닉콘 리뉴얼 홈페이지 설명">
+        </div>
+        <div id="section2">
+            <ul class="home_link">
+                <li>
+                    <a href="#1" class="top">▲ TOP</a>
+                </li>
+                <li>
+                    <a href="nikon/index.html" target="_blank">사이트 보기</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
